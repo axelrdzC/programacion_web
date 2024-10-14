@@ -5,26 +5,27 @@ body  {
 }
 
 header {
-    padding: 0.5em 0;
+    padding: 1em 0;
     top: 0;
     left: 0;
 }
 
 .cabeza img{
     position: absolute;
-    margin-top: 0.7vh;
-    margin-right: 175vh;
-    top: 0;
+    margin-top: 2vh;
+    margin-right: 70vw;
+    width: 20vw;
+    max-width: 120px;
     z-index: 2;
-    width: 22vh;
 }
 
 .cabeza {
     padding-top: 4vh;
     display: flex;
-    text-align: center;
     justify-content: center;
-    gap: 10vh;
+    align-items: center;
+    gap: 5vw;
+    text-align: center;
 }
 
 .cabeza a { 
@@ -54,14 +55,12 @@ header {
     margin-top: 50vh;
     width: 90vh;
     z-index: 2;
-    margin-bottom: 0;text-shadow: 0 0 30px rgba(255, 255, 255, 0.5),  /* Brillo blanco */
-    0 0 40px rgba(255, 255, 255, 0.3),  /* Brillo más difuso */
-    0 0 50px rgba(0, 0, 255, 0.2);      /* Brillo azul (opcional) */
+    margin-bottom: 0;text-shadow: 0 0 30px rgba(255, 255, 255, 0.5), 
+    0 0 40px rgba(255, 255, 255, 0.3),
+    0 0 50px rgba(0, 0, 255, 0.2); 
 }
 
 .destacados img {
-    top: 0;
-    position: relative;
     width: 100%;
 }
 
@@ -98,10 +97,6 @@ header {
     justify-content: center;
     margin: 10vh 20vh;
     gap: 10vh;
-}
-
-.img-brat img {
-    width: 100vh;
 }
 
 .txt-brat a {
@@ -147,10 +142,6 @@ header {
     gap: -10vh;
 }
 
-.img-rosa img {
-    width: 100vh;
-}
-
 .txt-rosa a {
     display: inline-block;
     text-align: center;
@@ -162,6 +153,12 @@ header {
     font-optical-sizing: auto;
     font-weight: 500;
     padding: 0.7em;
+}
+
+.img-brat img, .img-rosa img {
+    width: 100%;
+    min-width: 200px;
+    max-width: 500px;
 }
 
 .about-us img {
@@ -201,19 +198,20 @@ header {
 .login {
     display: flex;
     align-items: center;
-    background-color: #7B4AAB;
     color: white;
     margin: 10vh 40vh;
     padding: 0vh 10vh;
+    width: auto;
     height: 80vh;
     border-radius: 1em;
+    justify-content: center;
 }
 
 .side-a {
     display: flex;
     flex-direction: column;
     padding: 0 2em;
-    width: 50%;
+    width: 100vh;
 }
 
 .side-a h1 {
@@ -430,4 +428,36 @@ footer {
 
 .otros a:hover {
     color: yellow;
+}
+
+.sign {
+    margin-top: 5vh;
+    color: #ffffff;
+    font-family: "Kode Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 0.8em;
+}
+
+.sign:hover {
+    color: #b594d6;
+}
+
+.remember input[type="checkbox"] {
+    width: 1.2em;
+    height: 1.2em;
+    cursor: pointer;
+}
+
+.remember label {
+    cursor: pointer;
+}
+
+.login {
+    margin: 30vh 0;
+}
+
+.reg {
+    align-items: center;
+    width: 100%;
 }
