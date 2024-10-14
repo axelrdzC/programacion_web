@@ -1,0 +1,433 @@
+body  {
+    margin: 0;
+    top: 0;
+    background-color: #242424;
+}
+
+header {
+    padding: 0.5em 0;
+    top: 0;
+    left: 0;
+}
+
+.cabeza img{
+    position: absolute;
+    margin-top: 0.7vh;
+    margin-right: 175vh;
+    top: 0;
+    z-index: 2;
+    width: 22vh;
+}
+
+.cabeza {
+    padding-top: 4vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 10vh;
+}
+
+.cabeza a { 
+    font-family: "Kode Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    z-index: 2;
+}
+
+.back {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.destacados h1{
+    font-family: "Rubik Spray Paint", system-ui;
+    font-style: normal;
+    font-weight: 200;
+    position: absolute;
+    font-size: 4em;
+    color: white;
+    margin-left: 10vh;
+    margin-top: 50vh;
+    width: 90vh;
+    z-index: 2;
+    margin-bottom: 0;text-shadow: 0 0 30px rgba(255, 255, 255, 0.5),  /* Brillo blanco */
+    0 0 40px rgba(255, 255, 255, 0.3),  /* Brillo más difuso */
+    0 0 50px rgba(0, 0, 255, 0.2);      /* Brillo azul (opcional) */
+}
+
+.destacados img {
+    top: 0;
+    position: relative;
+    width: 100%;
+}
+
+.highlights {
+    display: flex;
+    flex-direction: column;
+}
+
+.txt-brat h1{
+    margin-top: 0;
+    font-family: "Rubik Spray Paint", system-ui;
+    font-style: normal;
+    font-weight: 200;
+    position: relative;
+    font-size: 6em;
+    color: white;
+    width: 90vh;
+    z-index: 2;
+    margin-bottom: 0;
+}
+
+.txt-brat p {
+    color: white;
+    width: 70vh;
+    font-family: "Kode Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    margin-bottom: 5vh;
+}
+
+.brat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10vh 20vh;
+    gap: 10vh;
+}
+
+.img-brat img {
+    width: 100vh;
+}
+
+.txt-brat a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    width: 70%;
+    background-color: #7B4AAB;
+    color: white;
+    font-family: "Kode Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    padding: 0.7em;
+}
+
+.txt-rosa h1{
+    margin-top: 0;
+    font-family: "Rubik Spray Paint", system-ui;
+    font-style: normal;
+    font-weight: 200;
+    position: relative;
+    font-size: 6em;
+    color: white;
+    width: 70vh;
+    z-index: 2;
+    margin-bottom: 0;
+}
+
+.txt-rosa p {
+    color: white;
+    width: 70vh;
+    font-family: "Kode Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    margin-bottom: 5vh;
+}
+
+.rosa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10vh 20vh;
+    gap: -10vh;
+}
+
+.img-rosa img {
+    width: 100vh;
+}
+
+.txt-rosa a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    width: 90%;
+    background-color: #7B4AAB;
+    color: white;
+    font-family: "Kode Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    padding: 0.7em;
+}
+
+.about-us img {
+    margin-top: -50vh;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+
+.vision {
+    margin-left: 23vh;
+    margin-top: 60vh;
+
+}
+
+.vision h1 {
+    font-family: "Rubik Spray Paint", system-ui;
+    font-style: normal;
+    font-weight: 200;
+    position: relative;
+    font-size: 6em;
+    color: #87B91B;
+    z-index: 2;
+    margin-bottom: 0;
+}
+
+.vision p { 
+    color: black;
+    width: 160vh;
+    font-family: "Kode Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    z-index: 2;
+    position: absolute;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    background-color: #7B4AAB;
+    color: white;
+    margin: 10vh 40vh;
+    padding: 0vh 10vh;
+    height: 80vh;
+    border-radius: 1em;
+}
+
+.side-a {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    width: 50%;
+}
+
+.side-a h1 {
+    
+    font-family: "Rubik Spray Paint", system-ui;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 2.3em;
+}
+
+.side-a label, input, button{
+    font-family: "Kode Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+
+.inputs {
+    margin-bottom: 1em;
+    margin-top: 0.2em;
+}
+
+.inputs input {
+    background-color: transparent;
+    width: 90%;
+    border: none;
+    outline: none;
+    padding: 0.5em 0;
+    border-bottom: 2px solid #87B91B;
+    color: white;
+}
+
+input::placeholder {
+    color: #87B91B;
+}
+
+.side-a button {
+    width: 90%;
+    padding: 0.5em 0;
+    background-color: #87B91B;
+    color: white;
+    border-radius: 0.5em;
+}
+
+.container {
+    margin: 20vh 10vh;
+    color: white;
+}
+
+.container h1 {
+    font-family: "Rubik Spray Paint", system-ui;
+    font-style: normal;
+    font-weight: 200;
+    position: relative;
+    font-size: 4em;
+    z-index: 2;
+    margin-bottom: 0;
+}
+
+.line {
+    margin-top: 2em;
+    border-top: 2px solid #ffffff;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: auto;
+    gap: 8vh;
+    margin: 0 0;
+}
+
+.preview {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 2em;
+    width: 50vh;
+    height: 60vh;
+    margin-bottom: 5vh;
+}
+
+
+.preview p, h3 {
+    font-family: "Kode Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+
+.preview h3 {
+    margin-bottom: 0;
+}
+
+.preview img {
+    width: 40vh;
+}
+
+.preview a {
+    text-decoration: none;
+    width: 100%;
+    background-color: #7B4AAB;
+    color: white;
+    font-family: "Kode Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    text-align: center;
+    padding: 0.7em;
+}
+
+.preview a:hover {
+    cursor: pointer;
+    background-color: #b594d6;
+}
+
+.txt-brat a:hover {
+    cursor: pointer;
+    background-color: #b594d6;
+}
+
+.txt-rosa a:hover {
+    cursor: pointer;
+    background-color: #b594d6;
+}
+
+.desc {
+    font-size: 0.7em;
+    font-weight: 400;
+}
+
+.producto {
+    display: flex;
+    align-items: center;
+    margin: 10vh 10vh;
+}
+
+.img img {
+    width: 40em;
+}
+
+.info a {
+    display: inline-block; 
+    text-decoration: none;
+    width: 50%;
+    background-color: #7B4AAB;
+    color: white;
+    font-family: "Kode Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    text-align: center;
+    padding: 0.7em;
+}
+
+.info a:hover {
+    cursor: pointer;
+    background-color: #b594d6;
+}
+
+
+.info {
+    color: white;
+}
+
+.info h1 {
+    margin-top: 0;
+    font-family: "Rubik Spray Paint", system-ui;
+    font-style: normal;
+    font-weight: 200;
+    position: relative;
+    font-size: 4em;
+    z-index: 2;
+    margin-bottom: 0;
+}
+
+.info h3 {
+    font-size: 1.5em;
+    font-family: "Kode Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+
+.info p {
+    margin-top: 0;
+    font-family: "Kode Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+
+footer {
+    background-color: #7B4AAB;
+    margin: 0;
+    padding: 2em 6.5em;
+}
+
+.si {
+    color: white;
+    font-size: 0.7em;
+    font-family: "Kode Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+
+.otros {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+    margin: 2em 0;
+}
+
+.otros a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.otros a:hover {
+    color: yellow;
+}
