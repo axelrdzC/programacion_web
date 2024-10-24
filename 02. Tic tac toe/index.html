@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>tic tac toe</title>
+</head>
+<body>
+
+    <header>
+
+        <h1 id="texto">TIC TAC TOE</h1>
+    
+    </header>
+
+    <main>
+        
+        <div class="demas">
+
+            <div class="juego">
+
+                <div class="input">
+                    <input type="text" id="playerName" placeholder="pon tu nombre" />
+                    <button id="start">Aceptar</button>
+                </div>
+
+                <div class="board">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+    
+                <button id="reiniciar">Reiniciar</button>
+    
+            </div>
+    
+            <div class="leadboard">
+    
+                <h2>Leaderboard.</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Posición</th>
+                            <th>Jugador</th>
+                            <th>Tiempo</th>
+                            <th>Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody id="personasTop">
+                    </tbody>
+                </table>
+    
+            </div>
+    
+        </div>
+        
+    </main>
+    
+    <script src="cerebro.js"></script>
+
+</body>
+</html>
