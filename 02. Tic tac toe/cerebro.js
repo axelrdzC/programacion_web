@@ -1,10 +1,12 @@
+// obtener los componentes
 const titulo = document.querySelector('#texto')
-const cells = document.querySelectorAll('.cell')
+const cells = document.querySelectorAll('.celda')
 const btnReiniciar = document.querySelector('#reiniciar')
 const name = document.querySelector('#playerName');
 const btnStart = document.querySelector('#start'); 
 const leaderboard = document.querySelector('#personasTop');
 
+// variables utiles
 let player = 'X'
 let maquina = 'O'
 let isEnPausa = false
@@ -13,16 +15,19 @@ let name2 = ''
 let tiempoInicio;
 let topTiempos = JSON.parse(localStorage.getItem('topTiempos')) || [];
 
+// el valor d las celdas
 const inputs = ['', '', '',
                 '', '', '',
                 '', '', '',]
 
+// muestra las celdas q deben estar llenos para ganar
 const comoGanar = [
-    [0,1,2], [3,4,5], [6,7,8],
-    [0,3,6], [1,4,7], [2,5,8],
-    [0,4,8], [2,4,6]
+    [0,1,2], [3,4,5], [6,7,8], // horizontal
+4    [0,3,6], [1,4,7], [2,5,8], // vertical
+    [0,4,8], [2,4,6] // diagonal
 ]
 
+// funcion para empezar el juego q no deja jugar si no pones tu nombre primero
 btnStart.addEventListener('click', () => {
     if (name.value == '') {
         alert('debes ponerte un nombre primero!');
@@ -35,39 +40,44 @@ btnStart.addEventListener('click', () => {
     }
 });
 
+// agregar evento onclick para las celdas
 cells.forEach((cell, index) => {
     cell.addEventListener('click', () => tapCell(cell, index))
 })
 
+// funcion q maneja lo q se hace cuando se toca una celda
 function tapCell(cell, index) {
 
     if (!isJuegoStarted) {
         alert('debes ponerte un nombre primero!');
         return;
-    } else {
+    }
 
-        if (cell.textContent == '' && !isEnPausa) {
-            isJuegoStarted = true
-            updateCell(cell, index)     
-            
-            if (!verificarGanador()) {
-                cambiarJugador()
-                turnoMaquina()
+    // si el juego esta en pausa o se acabo ya no permitira mas clicks
+    if (isEnPausa || cell.textContent !== '') {
+        return;
+    }
 
-                if (seLleno()) {
-                    titulo.textContent = "Empate!";
-                    btnReiniciar.style.visibility = 'visible'
-                }
+    updateCell(cell, index);
 
-            } else {
-                guardarTiempo()
-            }
+    if (!verificarGanador()) {
 
+        cambiarJugador();
+        turnoMaquina();
+
+        if (seLleno()) {
+            titulo.textContent = "Empate!";
+            btnReiniciar.style.visibility = 'visible';
+            isEnPausa = true;
         }
 
+    } else {
+        guardarTiempo();
     }
+
 }
 
+// dar formato al tiempo de los jugadores top
 function formatearTiempo(milisegundos) {
     const totalSegundos = Math.floor(milisegundos / 1000);
     const minutos = Math.floor(totalSegundos / 60);
@@ -77,6 +87,7 @@ function formatearTiempo(milisegundos) {
     return `${minutos}m ${segundos}s ${milis}ms`;
 }
 
+// guardar el tiempo de cada jugador
 function guardarTiempo() {
     const tiempoFin = new Date();
     const tiempoJuego = tiempoFin - tiempoInicio;
@@ -112,6 +123,7 @@ function mostrarLeaderboard() {
     });
 }
 
+// cargar el leaderboard al cargar la pagina
 document.addEventListener('DOMContentLoaded', () => {
     const tiemposGuardados = JSON.parse(localStorage.getItem('topTiempos')) || [];
     topTiempos = tiemposGuardados.slice(0, 10);
@@ -150,6 +162,7 @@ function turnoMaquina() {
     }, 500)
 }
 
+// actualizar el contenido de las celdas
 function updateCell(cell, index) {
     cell.textContent = player
     inputs[index] = player
@@ -157,6 +170,7 @@ function updateCell(cell, index) {
     console.log(inputs)
 }
 
+// verificar si los inputs puestos son los ganadores
 function verificarGanador() {
     for (const [a,b,c] of comoGanar) {
         if (inputs[a] == player &&
@@ -169,6 +183,7 @@ function verificarGanador() {
     }
 }
 
+// funcion bool q checa si la tabla esta llena o no
 function seLleno() {
     return inputs.every(cell => cell !== '');
 }
@@ -176,16 +191,17 @@ function seLleno() {
 function declararGanador(indexGanadores) {
 
     if (player === 'O') {
-        titulo.textContent = "La máquina te ganó";
+        titulo.textContent = "la máquina te ganó";
     } else {
         titulo.textContent = `${name2} gana`;
     }
 
-    indexGanadores.forEach((index) =>
-        cells[index].style.background = '#6c6ac0'
-    )
+    indexGanadores.forEach(index => {
+        cells[index].style.background = '#6c6ac0';
+    });
 
-    btnReiniciar.style.visibility = 'visible'
+    btnReiniciar.style.visibility = 'visible';
+    isEnPausa = true;
 
 }
 
