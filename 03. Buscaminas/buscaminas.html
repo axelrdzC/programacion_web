@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>buscaminas y asi</title>
+</head>
+<body>
+
+    <div class="background"></div>
+
+    <header>
+        <div class="options">
+            <div class="level">
+                <p>Cambiar nivel</p>
+                <select id="nivel-h">
+                    <option value="facil">facil</option>
+                    <option value="medio">medio</option>
+                    <option value="dificil">dificil</option>
+                    <option value="muyDificil">muy dificil</option>
+                    <option value="hardcore">hardcore</option>
+                    <option value="leyenda">leyenda</option>
+                  </select>
+            </div>
+            <span class="btn">
+                <button id="play">Cambiar</button>
+            </span>
+        </div>
+    </header>
+
+    <div id="temporal-alert"></div>
+    
+
+    <div class="main">
+        <table cellspacing=0 cellpadding=0 id="tablero">
+            <tr>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="cerebro.js"></script>
+
+</body>
+</html>

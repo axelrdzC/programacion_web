@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>buscaminas y asi</title>
+</head>
+<body>
+    
+    <div class="background"></div>
+
+    <header>
+        <div class="options">
+            <p>BUSCAMINAS</p>
+        </div>
+    </header>
+
+    <div class="the-form">
+        
+        <h1 style="margin-top: 0;">configuracion inicial</h1>
+        <form id="config">
+
+            <h2>escoge algun estilo de juego predefinido</h2>
+            <div class="inputs">
+                <label for="nivel">selecciona el nivel de dificultad</label>
+                <select id="nivel" style="margin-top: 0.2em;">
+                    <option value="personalizado">personalizado</option>
+                    <option value="facil">facil</option>
+                    <option value="medio">medio</option>
+                    <option value="dificil">dificil</option>
+                    <option value="muyDificil">muy dificil</option>
+                    <option value="hardcore">hardcore</option>
+                    <option value="leyenda">leyenda</option>
+                </select>
+            </div>
+
+            <h2>escoge un tamano personalizado</h2>
+            <div class="inputs">
+                <label for="filas">numero de filas (minimo 5):</label>
+                <input type="number" id="filas" min="5" value="5">
+        
+                <label for="columnas">numero de columnas (minimo 5):</label>
+                <input type="number" id="columnas" min="5" value="5">
+        
+                <label for="minas">canidad de minas:</label>
+                <input type="number" id="minas" min="1" value="1">
+
+                <span class="btn" style="padding: 0;"><button type="submit">iniciar juego</button></span>
+            </div>
+        
+        </form>
+    
+    </div>
+    
+    <script src="config.js"></script>
+
+</body>
+</html>
