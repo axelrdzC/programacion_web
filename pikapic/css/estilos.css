@@ -99,3 +99,26 @@ form {
 .sm-states p {
     background-image: var(--gradienteFlower);
 }
+
+@media (max-width: 576px) {
+    .interaction-section {
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: space-between;
+    }
+
+    .interaction-section div {
+        flex: 1 1 45%;
+        min-width: 80px;
+        text-align: center;
+    }
+
+    .interaction-section svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .interaction-section p {
+        font-size: 0.8rem;
+    }
+}

@@ -88,7 +88,7 @@
     </ul>
 
     <!-- west side dices tu -->
-    <div class="w-100 p-4">   
+    <div class="w-100 py-4">   
          
         <!-- navbar para pantallas pequeñas -->
         <nav class="navbar navbar-expand-lg d-md-none mb-5 align-items-center justify-content-center sticky-top bg-white border-bottom">
@@ -106,7 +106,7 @@
         
                 <!-- Menú colapsable -->
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav michroma ms-auto flex-column py-3 gap-3">
+                    <ul class="navbar-nav michroma ms-auto flex-column p-2 gap-3">
                         <!-- Home -->
                         <li class="nav-item">
                             <a class="nav-link d-flex gap-4" href="dashboard.html">
@@ -172,7 +172,7 @@
         </nav>
         
         <!-- top -->
-        <div class="d-flex align-items-center mb-4">
+        <div class="container d-flex align-items-center mb-4">
             <!-- usernombre -->
             <div class="flex-grow-1 michroma ms-2 fs-2">axel_rc (-_-)'s <span class="micro5">timeline</span></div>
             <!-- perfil y dropdown -->
@@ -190,7 +190,7 @@
             </div>
         </div>
         <!-- buscador -->
-        <div class="mb-4">
+        <div class="container mb-4">
             <input type="text" class="form-control rounded-4" placeholder="Buscar...">
         </div>
         <!-- feed & estados -->
@@ -199,7 +199,7 @@
                 <div class="row">
                     <!-- feed d posts -->
                     <div class="col-lg-9 col-md-12">
-                        <div class="row g-4" id="posts-container">
+                        <div class="row g-2" id="posts-container">
                             <!-- post extendido -->
                             <div id="exp-post" style="display: none;">
                                 <div class="border rounded-3 container">
@@ -218,44 +218,40 @@
                                             <div class="d-flex flex-column flex-grow-1">
                                                 i’m droppin a nw ep soon!!! soooooooooooooooo stay tune <3
                                             </div>
-                                            <div class="d-flex">
-                                                <div class="d-flex gap-4 fs-6 flex-grow-1">
-                                                    <!-- Icono de "Like" -->
-                                                    <div class="d-flex gap-2 align-items-center">
-                                                        <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                                            <path d="M4.3314 12.2511L12 20.2037L19.6686 12.2511C20.5211 11.3671 21 10.168 21 8.91778C21 6.31429 18.9648 4.20374 16.4543 4.20374C15.2487 4.20374 14.0925 4.70039 13.24 5.58445L12 6.8704L10.76 5.58445C9.90749 4.70039 8.75128 4.20374 7.54569 4.20374C5.03517 4.20374 3 6.31429 3 8.91778C3 10.168 3.47892 11.3671 4.3314 12.2511Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                        <p class="m-0 likes-count">27k</p>
-                                                    </div>
-                                                    <!-- Icono de "Comentarios" -->
-                                                    <div class="d-flex gap-2 align-items-center">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                                            <path d="M6 6.20374C6 5.09917 6.89543 4.20374 8 4.20374H16C17.1046 4.20374 18 5.09917 18 6.20374V21.2037L12 15.2037L6 21.2037V6.20374Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                        <p class="m-0 comments-count">27k</p>
-                                                    </div>
-                                                    <!-- Icono de "Compartir" -->
-                                                    <div class="d-flex gap-2 align-items-center">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                                            <path d="M8 9.70374H15M8 13.7037H13M15.3 19.3038L21 21.2038L19.1 15.5038C19.1 15.5038 20 14.2037 20 11.7037C20 7.00932 16.1944 3.20374 11.5 3.20374C6.80558 3.20374 3 7.00932 3 11.7037C3 16.3982 6.80558 20.2037 11.5 20.2037C14.0847 20.2037 15.3 19.3038 15.3 19.3038Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                        <p class="m-0 shares-count">27k</p>
-                                                    </div>
-                                                    <!-- Icono de "Guardar" -->
-                                                    <div class="d-flex gap-2 align-items-center">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                                            <path d="M20 13.2037V18.2037C20 19.3083 19.1046 20.2037 18 20.2037H6C4.89543 20.2037 4 19.3083 4 18.2037L4 13.2037M16 8.20374L12 4.20374M12 4.20374L8 8.20373M12 4.20374L12 16.2037" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                        <p class="m-0 save-count">27k</p>
-                                                    </div>
+                                            <div class="d-flex flex-wrap mt-4 gap-3">
+                                                <div class="d-flex gap-2 align-items-center">
+                                                    <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                                        <path d="M4.3314 12.2511L12 20.2037L19.6686 12.2511C20.5211 11.3671 21 10.168 21 8.91778C21 6.31429 18.9648 4.20374 16.4543 4.20374C15.2487 4.20374 14.0925 4.70039 13.24 5.58445L12 6.8704L10.76 5.58445C9.90749 4.70039 8.75128 4.20374 7.54569 4.20374C5.03517 4.20374 3 6.31429 3 8.91778C3 10.168 3.47892 11.3671 4.3314 12.2511Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    <p class="m-0 likes-count">27k</p>
                                                 </div>
-                                                <!-- Icono de opciones adicionales -->
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
-                                                    <path d="M19 13.2037C19.5523 13.2037 20 12.756 20 12.2037C20 11.6515 19.5523 11.2037 19 11.2037C18.4477 11.2037 18 11.6515 18 12.2037C18 12.756 18.4477 13.2037 19 13.2037Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M12 13.2037C12.5523 13.2037 13 12.756 13 12.2037C13 11.6515 12.5523 11.2037 12 11.2037C11.4477 11.2037 11 11.6515 11 12.2037C11 12.756 11.4477 13.2037 12 13.2037Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M5 13.2037C5.55228 13.2037 6 12.756 6 12.2037C6 11.6515 5.55228 11.2037 5 11.2037C4.44772 11.2037 4 11.6515 4 12.2037C4 12.756 4.44772 13.2037 5 13.2037Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                            </div>
+                                                <div class="d-flex gap-2 align-items-center">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                                        <path d="M6 6.20374C6 5.09917 6.89543 4.20374 8 4.20374H16C17.1046 4.20374 18 5.09917 18 6.20374V21.2037L12 15.2037L6 21.2037V6.20374Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    <p class="m-0 comments-count">27k</p>
+                                                </div>
+                                                <div class="d-flex gap-2 align-items-center">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                                        <path d="M8 9.70374H15M8 13.7037H13M15.3 19.3038L21 21.2038L19.1 15.5038C19.1 15.5038 20 14.2037 20 11.7037C20 7.00932 16.1944 3.20374 11.5 3.20374C6.80558 3.20374 3 7.00932 3 11.7037C3 16.3982 6.80558 20.2037 11.5 20.2037C14.0847 20.2037 15.3 19.3038 15.3 19.3038Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    <p class="m-0 shares-count">27k</p>
+                                                </div>
+                                                <div class="d-flex gap-2 align-items-center">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                                        <path d="M20 13.2037V18.2037C20 19.3083 19.1046 20.2037 18 20.2037H6C4.89543 20.2037 4 19.3083 4 18.2037L4 13.2037M16 8.20374L12 4.20374M12 4.20374L8 8.20373M12 4.20374L12 16.2037" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                    <p class="m-0 save-count">27k</p>
+                                                </div>
+                                                <div class="d-flex justify-content-end flex-grow-1">
+                                                    <!-- Icono de opciones adicionales -->
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                                                        <path d="M19 13.2037C19.5523 13.2037 20 12.756 20 12.2037C20 11.6515 19.5523 11.2037 19 11.2037C18.4477 11.2037 18 11.6515 18 12.2037C18 12.756 18.4477 13.2037 19 13.2037Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M12 13.2037C12.5523 13.2037 13 12.756 13 12.2037C13 11.6515 12.5523 11.2037 12 11.2037C11.4477 11.2037 11 11.6515 11 12.2037C11 12.756 11.4477 13.2037 12 13.2037Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        <path d="M5 13.2037C5.55228 13.2037 6 12.756 6 12.2037C6 11.6515 5.55228 11.2037 5 11.2037C4.44772 11.2037 4 11.6515 4 12.2037C4 12.756 4.44772 13.2037 5 13.2037Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                </div>
+                                            </div>                                            
                                         </div>
                                     </div>
                                 </div>
