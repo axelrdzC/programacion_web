@@ -1,0 +1,100 @@
+:root {
+    /* colores */
+    --darkSea: #68818A;
+    --sea: #738F99;
+    --cleanSea: #B2C4C8;
+    --gradienteFlower: linear-gradient(90deg, rgba(178, 196, 200, 0.20) 0%, rgba(232, 189, 190, 0.20) 100%);
+}
+
+
+/* fonts */
+.metrophobic { font-family: "Metrophobic", serif; }
+.michroma { font-family: "Michroma", serif; }
+.micro5 { font-family: "Micro 5"; }
+
+
+body {
+    font-family: "Metrophobic", serif;
+}
+form {
+    color: var(--darkSea);
+}
+
+.logo-title {
+    font-family: "Michroma", serif;
+    font-size: 42px;
+}
+.boton {
+    font-family: "Micro 5";
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+.btn-outline-flower {
+    color: var(--darkSea);
+    border: 1px solid var(--sea);
+    background: var(--gradienteFlower)
+}
+
+.btn-flower {
+    color: white;
+    border: 1px solid var(--darkSea);
+    background: var(--cleanSea);
+}
+
+.bg-flower {
+    background-image: url(../img/mesh.png); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.bg-user {
+    background-image: url(../img/mar.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Alinea el contenido al fondo */
+    height: 40vh;
+}
+
+.sticky-sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar-middle {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn.dropdown-toggle::after {
+    display: none !important;
+}
+
+.states {
+    color: var(--darkSea);
+}
+
+.yourmind {
+    border: 2px dashed;
+    background-color: rgba(224, 229, 230, 0.7);
+}
+
+.theirmind {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.sm-states p {
+    background-image: var(--gradienteFlower);
+}
