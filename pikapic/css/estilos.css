@@ -122,3 +122,8 @@ form {
         font-size: 0.8rem;
     }
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--darkSea);
+}
