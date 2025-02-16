@@ -65,6 +65,7 @@ form {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+    left: 0;
     height: 100vh;
     display: flex;
     flex-direction: column;
